@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Intermediación de compra de vehículos 0km, venta de autos usados y servicio integral de patentamiento en Argentina. Con AutoLink, tu próximo auto está a un solo clic.">
+    <title>AutoLink - Compra, Venta y Patentamiento de Vehículos</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #dfe3e6; /* Fondo gris suave */
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #c85e50; /* Color ladrillo */
+            padding: 20px 30px;
+        }
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #fff;
+        }
+        .logo a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1em;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            color: #f8c5b4; /* Color claro para contraste */
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #b7c3cd; /* Gris más cálido */
+        }
+        .hero h1 {
+            font-size: 3.2em;
+            margin-bottom: 20px;
+            color: #2f3542;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+            color: #575b6e;
+        }
+        .cta {
+            background-color: #f8c5b4; /* Color claro ladrillo */
+            color: #333;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .cta:hover {
+            background-color: #e6b197; /* Ladrillo más suave al pasar */
+        }
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            gap: 30px;
+            background-color: #f8f9fb; /* Gris suave */
+        }
+        .content-item {
+            flex: 1;
+            min-width: 280px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 20px;
+        }
+        .content-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #f3f4f6;
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #c85e50; /* Ladrillo para resaltar */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+        .footer-column h3 {
+            color: #fff;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .footer-column p {
+            color: #fff;
+        }
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 1.5em;
+        }
+        .social-icons a:hover {
+            color: #f8c5b4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">AutoLink</a>
+        </div>
+        <nav class="nav">
+            <a href="#">Inicio</a>
+            <a href="#comprar">Comprar 0KM</a>
+            <a href="#vender">Vender Usado</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenido a <span style="color: #c85e50;">AutoLink</span></h1>
+        <p>Compra tu 0KM al mejor precio, sin complicaciones y en un solo lugar.</p>
+        <button class="cta" onclick="window.location.href='#comprar'">Nuestras Ofertas</button>
+    </section>
+
+    <section id="comprar" class="content-section">
+        <div class="content-item">
+            <img src="https://www.media.stellantis.com/cache/4/e/3/a/a/4e3aa4ff2083b9e190caec6421290d2bee7392a7.jpeg" alt="Compra 0KM">
+            <h3><span style="font-weight: bold; text-decoration: underline;">Compra tu 0KM</span></h3>
+            <p><span style="font-weight: bold;">Elegí</span> tu próximo 0km.</p>
+            <button class="cta" onclick="window.location.href='#contacto'">Los más buscados</button>
+        </div>
+        <div class="content-item">
+            <img src="https://us.res.keymedia.com/files/image/iStock-deal_637865940%20(500%20x%20334).jpg" alt="Vehículos Usados">
+            <h3><span style="font-weight: bold; text-decoration: underline;">Vende tu Usado</span></h3>
+            <p>Publica tu auto usado y llega a miles de compradores potenciales <span style="font-weight: bold;">sin comisiones</span>.</p>
+            <button class="cta" onclick="window.location.href='#contacto'">Publicar Mi Auto</button>
+        </div>
+    </section>
+
+    <section id="vender" class="gallery">
+        <h2 style="text-align: center; color: #2f3542;">TOP 3 Diciembre</h2>
+        <img src="https://gower.ar/wp-content/uploads/2023/07/Copia-de-Peugeot-208-Allure-5.jpg" alt="Imagen 1">
+        <img src="https://acroadtrip.blob.core.windows.net/catalogo-imagenes/m/RT_V_e6157bd522ef4cc08807d1b4b8e0d431.jpg" alt="Imagen 2">
+        <img src="https://toyotacleber.com/hilux-eng/img/hilux-2021-blanco.jpg" alt="Imagen 3">
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p>Email: contacto@autolink.com</p>
+                <p>Teléfono: +54 9 11 1234 5678</p>
+                <p>Dirección: Av. Automotriz 123, CABA</p>
+                <div class="social-icons">
+                    <a href="#">FB</a>
+                    <a href="#">IG</a>
+                    <a href="#">TW</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Sobre AutoLink</h3>
+                <p>En AutoLink conectamos a los usuarios con los mejores concesionarios y ayudamos a vender tu vehículo usado de forma simple y rápida. Con nosotros, tu próximo auto está al alcance de un clic.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
